@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+/* link ve digita-cv */
+a {
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #f5ba6d;
+  border-radius: 10px;
+  color: #8f3806;
+}
+/* phan list */
+ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+i {
+  float: left;
+  font-size: 2rem;
+  color: #8f3806;
+}
+h1 {
+  color: #0d6efd;
+}
+/* them border */
+.line {
+  border-bottom: 2px dotted rgb(13, 154, 237);
+}
+/* them padding */
+#gap {
+  padding: 1rem;
+}
+/* chinh cac phan noi dung */
+#goals,
+#team,
+#timeline,
+#primary,
+#scopes {
+  border: 10px solid #0d6efd;
+  padding: 1rem;
+}
+/* mobile >767px*/
+@media only screen and (max-width: 767px) {
+  #timeline {
+    display: block;
+  }
+  /* căn chỉnh các cột */
+  #goals ul li,
+  #team ul li,
+  #primary ul li,
+  #timeline ul li {
+    flex-direction: column;
+  }
+  /* căn chỉnh icon */
+  #goals ul li i,
+  #team ul li i,
+  #primary ul li i {
+    padding-left: 6rem;
+  }
+  /* căn chỉnh nội dung */
+  #team ul,
+  #scopes .scopes-ctn {
+    display: flex;
+    flex-direction: column;
+  }
+  /* căn chỉnh timeline */
+  #timeline ul li {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+/* table tu 768px den 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* chinhr container */
+  .container {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* chinh cac cot */
+  #gap {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /* width cac phan */
+  #goals,
+  #team,
+  #scopes,
+  #primary {
+    width: 850px;
+  }
+  #timeline {
+    width: 640px;
+  }
+  /* căn chỉnh icon */
+  #goals ul li i,
+  #team ul li i,
+  #primary ul li i {
+    padding-left: 280px;
+  }
+  /* căn chỉnh nội dung */
+  #team ul,
+  #scopes .scopes-ctn {
+    display: flex;
+    flex-direction: column;
+  }
+  /* căn chỉnh các cột */
+  #goals ul li,
+  #team ul li,
+  #primary ul li,
+  #timeline ul li {
+    flex-direction: column;
+  }
+  /* căn chỉnh timeline */
+  #timeline ul li {
+    flex-direction: column;
+    width: 100%;
+  }
+}

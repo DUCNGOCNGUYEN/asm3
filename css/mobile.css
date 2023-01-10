@@ -1,0 +1,215 @@
+/* kích thước màn hình từ 768px đến 1024px */
+
+@media only screen and (max-width: 767px) {
+  *,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* banner */
+  /* chỉnh phần ảnh banner */
+
+  #banner img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  /* fontsize h1 */
+  #banner h1 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  /* kích thước phần dưới h1 */
+  #banner span {
+    font-size: 12px;
+  }
+
+  /* navbar */
+  #nav-bar {
+    margin: 0;
+    padding: 0;
+  }
+  #nav-bar .container {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+  /* ẩn ảnh giữa navbar */
+
+  #nav-bar .nav-image {
+    display: none;
+  }
+  /* căn chỉnh phần thông tin */
+  .nav-info {
+    display: block;
+    margin: 10px 0;
+    padding: 0;
+    text-align: left;
+  }
+  /* ẩn các border */
+  .nav-bar-info::before,
+  .nav-bar-info::after {
+    display: none;
+  }
+  /* margin a */
+  #nav-bar a {
+    margin-left: 0;
+  }
+  /* phần icon i */
+  #nav-bar i {
+    float: left;
+    margin-right: 0;
+  }
+  /* about */
+  /* phần thông tin */
+  #about {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #about .container {
+    display: block;
+    width: 100%;
+  }
+  /* phần h1 */
+  #about h1 {
+    padding: 20px 0;
+    margin-bottom: 0;
+  }
+  /* căn chỉnh padding và margin */
+  #about #target {
+    padding: 0;
+  }
+  .about-target {
+    margin: 20px;
+  }
+
+  #about #personal-info {
+    margin: 0;
+    padding: 20px;
+  }
+  /* thong tin nghề nghiệp */
+  #job-info {
+    margin: 0;
+    padding: 0;
+  }
+  #job-info .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    width: fit-content;
+  }
+  /* chứng chỉ  */
+  #certificate {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #certificate .container {
+    width: 100%;
+  }
+  /* căn chỉnh margin và padding */
+  #certificate .bg-grey,
+  #certificate .container {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  /* cột nội dung  */
+  #certificate #content {
+    display: flex;
+    flex-direction: column;
+  }
+  /* phần java */
+  #certificate .java {
+    width: 300px;
+  }
+  .content-info {
+    padding-left: 16px;
+  }
+  /* các cột */
+  #certificate .section-content {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+  /* phần tiêu đề */
+  #certificate h1.section-title {
+    margin: 20px 0;
+    width: auto;
+  }
+  /* phần ảnh */
+  .line .image {
+    padding-top: 20px;
+  }
+  /* phần line đầu tiên */
+  .line::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #d6c08d;
+    background-color: #d6c08d;
+    height: 1px;
+    width: 340px;
+  }
+  /* phần line thứ 2 */
+  #certificate .access::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #d6c08d;
+    background-color: #d6c08d;
+    width: 340px;
+
+    top: -10px;
+    left: 0;
+  }
+  /* DỰ ÁN */
+  #project {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #project .container {
+    width: fit-content;
+  }
+  /* PHẦN tiêu đề */
+  #project h1.section-title {
+    margin-top: 30px;
+    padding-left: 48px;
+  }
+  /* phần icon và h5 */
+  .column-info1 h5,
+  .column-info2 h5,
+  .column-info3 h5,
+  .icon {
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 299px;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+  }
+  /* phần năm */
+  .year {
+    width: fit-content;
+    margin: 5px;
+  }
+
+  /* footer */
+  #footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  #footer .container {
+    width: 100%;
+  }
+  /* ẩn phần chữ */
+  #footer ul li span {
+    display: none;
+  }
+  /* tăng kích thước icon */
+  #footer ul li {
+    font-size: 40px;
+  }
+}
